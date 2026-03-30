@@ -78,7 +78,7 @@ const Home = () => {
               </h3>
 
               <p className="text-slate-400 text-sm mb-4 tracking-wide">
-                📍 Bahraich, Uttar Pradesh, India
+                📍 Kannauj, Uttar Pradesh, India
               </p>
 
               
