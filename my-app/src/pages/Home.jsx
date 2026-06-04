@@ -41,7 +41,7 @@ const Home = () => {
               Focused on clean architecture and performance optimization.
             </p>
 
-            <div className="flex gap-6 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4">
               <Link
                 to="/projects"
                 className="px-8 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl font-medium shadow-lg hover:scale-105 hover:shadow-blue-500/30 transition duration-300"

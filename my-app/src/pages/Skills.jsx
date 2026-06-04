@@ -25,9 +25,14 @@ const Skills = () => {
       <div className="min-h-screen flex items-center justify-center bg-slate-950 text-white">
         <div className="flex flex-col items-center space-y-4">
           <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-          <p className="text-lg font-medium tracking-wide">
-            Loading Skills...
-          </p>
+          <div className="text-center">
+            <p className="text-lg font-medium tracking-wide">
+              Loading Skills...
+            </p>
+            <p className="text-sm text-slate-400 mt-2">
+              Please wait a moment while the server wakes up.
+            </p>
+          </div>
         </div>
       </div>
     );

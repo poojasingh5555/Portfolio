@@ -10,15 +10,25 @@ const Contact = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  if (!data)
-    return (
-      <div className="h-screen flex items-center justify-center bg-slate-950 text-white text-xl">
-        Loading...
-      </div>
-    );
+    if (!data)
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-slate-950 text-white">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="w-10 h-10 border-4 border-orange-500 border-t-transparent rounded-full animate-spin"></div>
+            <div className="text-center">
+              <p className="text-lg font-medium tracking-wide">
+                Loading Contact Info...
+              </p>
+              <p className="text-sm text-slate-400 mt-2">
+                Please wait a moment while the server wakes up.
+              </p>
+            </div>
+          </div>
+        </div>
+      );
 
   return (
-    <section className="min-h-screen bg-slate-950 text-white px-6 py-20">
+    <section className="min-h-screen bg-slate-950 text-white px-4 sm:px-6 py-12 md:py-20">
       <div className="max-w-6xl mx-auto">
 
         {/* ================= Hero Section ================= */}

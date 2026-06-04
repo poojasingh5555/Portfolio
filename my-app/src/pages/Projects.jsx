@@ -25,9 +25,14 @@ const Projects = () => {
       <div className="min-h-screen flex items-center justify-center bg-slate-950 text-white">
         <div className="flex flex-col items-center space-y-4">
           <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-          <p className="text-lg font-medium tracking-wide">
-            Loading Projects...
-          </p>
+          <div className="text-center">
+            <p className="text-lg font-medium tracking-wide">
+              Loading Projects...
+            </p>
+            <p className="text-sm text-slate-400 mt-2">
+              Please wait a moment while the server wakes up.
+            </p>
+          </div>
         </div>
       </div>
     );
@@ -46,7 +51,7 @@ const Projects = () => {
       <div className="absolute -top-40 -left-40 w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-[400px] h-[400px] bg-indigo-600/20 rounded-full blur-3xl"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
 
         {/* Heading */}
         <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-4">
@@ -66,7 +71,7 @@ const Projects = () => {
             No projects available.
           </p>
         ) : (
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
             {projects.map((project) => (
               <div
                 key={project._id}
