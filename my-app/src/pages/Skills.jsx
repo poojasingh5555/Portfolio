@@ -40,7 +40,7 @@ const Skills = () => {
     );
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-slate-950 text-white">
+    <div className="relative min-h-screen overflow-x-hidden bg-slate-950 text-white">
 
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
@@ -49,7 +49,7 @@ const Skills = () => {
       <div className="absolute -top-40 -left-40 w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-[400px] h-[400px] bg-indigo-600/20 rounded-full blur-3xl"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
 
         {/* Heading */}
         <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-4">
@@ -68,7 +68,7 @@ const Skills = () => {
             No skills available.
           </p>
         ) : (
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
             {skills.map((skill) => (
               <SkillCard key={skill._id} skill={skill} />
             ))}

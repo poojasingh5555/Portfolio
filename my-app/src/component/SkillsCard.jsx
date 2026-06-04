@@ -11,7 +11,7 @@ const SkillCard = ({ skill }) => {
   }, [skill.level]);
 
   return (
-    <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-lg hover:shadow-orange-500/10 hover:-translate-y-2 transition-all duration-300">
+    <div className="bg-slate-900 border border-slate-800 p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-orange-500/10 hover:-translate-y-2 transition-all duration-300">
 
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
